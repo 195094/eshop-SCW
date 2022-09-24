@@ -1,0 +1,35 @@
+.nav{
+    color:#1d2727;
+     display: flex; 
+    width: 100%;
+     align-items: center;
+    justify-content:space-between; 
+    padding: 0 1rem;
+    margin: 20px 25px;
+}
+
+.nav #navBarUL{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    display: flex; 
+     /* gap: 28rem;  */
+}
+.nav>#navBarUL>li{
+    padding-right:20rem;
+}
+.nav>#navBarUL>li:nth-last-child(2),
+.nav>#navBarUL>li:last-child
+{
+    padding-right: 2rem;
+}
+.nav a{
+    text-decoration: none;
+}
+
+#homeLogo{
+    /* margin-top: 10px; */
+    font-size: 1.3rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+}
