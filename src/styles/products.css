@@ -1,0 +1,18 @@
+.productContainer{
+    width: 80%;
+}
+.productList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productItem{
+    max-width: 300px;
+    max-height: 300px;
+}
+.productItem .picture{
+    width: 200px;
+    height: 270px;
+    object-fit: scale-down;
+}
