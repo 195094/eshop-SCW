@@ -43,7 +43,7 @@ function CatalogList() {
                   <Link
                     to={category.path}
                     onClick={onCategoryClicked(category.name)}
-                    key={category.name}
+                    key={Math.random()}
                   >
                     {category.name}
                   </Link>

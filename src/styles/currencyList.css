@@ -1,0 +1,59 @@
+.DropDownContainerCur{
+    width: 5.5 rem;
+    height:43px;
+    margin: -10px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.DropDownHeaderCur{
+  margin-bottom: 0.13em;
+  padding: 0.4em 0.5em 0.4em 1em;
+  /* box-shadow: 0px 2px #209125; */
+  /* border: 2px; */
+  font-weight: 500;
+  font-size: 1.3rem;
+  overflow-y: hidden;
+}
+.DropDownHeaderCur:hover{
+    color:rgb(22, 22, 22);
+}
+
+.DropDownListCur{
+    padding: 0;
+    width: 6rem;
+    margin: 0;
+    /* padding-left: 0.65em; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    box-shadow: 0 1px 15px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.ListItemCur{
+    list-style: none;
+    /* padding: 0.3em 0 0.7em 1em;
+    /* border-bottom: 2px;
+    size: 20px; */ 
+}
+.ListItemCur>div{
+     padding: 0.3em 0 0.7em 1em;
+    height: inherit;
+    width: 100px;
+}
+.ListItemCur:hover{
+    background-color: lightgray;
+}
+.ListItemCur>a:visited{
+    color:black;
+}
+
+#DropDownArr{
+    margin-left: 10px;
+    font-size: 0.5rem;
+    overflow-y: hidden;
+}

@@ -1,5 +1,5 @@
 .nav{
-    color:#1d2727;
+    /* color:#1d2727; */
      display: flex; 
     width: 100%;
      align-items: center;
@@ -13,6 +13,7 @@
     margin-top: 5px;
     list-style: none;
     display: flex; 
+    justify-content: space-between;
      /* gap: 28rem;  */
 }
 .nav>#navBarUL>li{
@@ -21,7 +22,7 @@
 .nav>#navBarUL>li:nth-last-child(2),
 .nav>#navBarUL>li:last-child
 {
-    padding-right: 2rem;
+    padding-right: 0.8rem;
 }
 .nav a{
     text-decoration: none;
@@ -29,7 +30,10 @@
 
 #homeLogo{
     /* margin-top: 10px; */
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     margin-left: 9rem;
-    margin-right: 9rem;
+    margin-right: 12rem;
+}
+.fa-bag-shopping{
+    color: #04AA6D;   
 }

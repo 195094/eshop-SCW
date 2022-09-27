@@ -11,23 +11,39 @@ import { Route, Routes, Link } from "react-router-dom";
 import "./NavBar";
 import NavBar from "./NavBar";
 
-function App() {
-  //TODO: LIST OUT THE PRODUCTS 3xN
-  return (
-    //DOSUREDI NAVBAR SO SLIKI ZA CURR, CART, HOMELOGO
-    <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route>
-          <Route path="women" element={<Women />}></Route>
-          <Route path="men" element={<Men />}></Route>
-          <Route path="kids" element={<Kids />}></Route>
-        </Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
-    </>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currency: null,
+    };
+  }
+
+  handleCurrCallBack = (selectedCurr) => {
+    this.setState({ currency: selectedCurr });
+    this.render();
+    console.log("App state after currency change " + this.state.currency);
+  };
+
+  render() {
+    return (
+      <>
+        <NavBar currCallBack={this.handleCurrCallBack} />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route>
+            <Route
+              path="women"
+              element={<Women curr={this.state.currency} />}
+            ></Route>
+            <Route path="men" element={<Men />}></Route>
+            <Route path="kids" element={<Kids />}></Route>
+          </Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </>
+    );
+  }
 }
 
 export default App;

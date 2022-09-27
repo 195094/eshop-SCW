@@ -22,9 +22,10 @@ class Women extends React.Component {
   };
 
   render() {
+    console.log("At time of render Women" + this.props.curr);
     return (
       <div className="productContainer">
-        <ProductsList products={this.state.clothes} />
+        <ProductsList curr={this.props.curr} products={this.state.clothes} />
       </div>
       // <h1>Women</h1>
     );
